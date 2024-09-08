@@ -1,6 +1,13 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * Suit.cpp
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This source file contains the definitions for the operators for the Suit enum.
+ *
+ */
+
 #include "Suit.h"
 
 
@@ -24,6 +31,7 @@ ostream& operator<<(ostream &ost, const Suit &suit) {
     }
 }
 
+// prefix increment operator for Suit enum
 Suit& operator++(Suit& suit) {
     switch (suit) {
         case Suit::clubs:

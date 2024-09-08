@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * Suit.h
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This header file contains declarations for the Suit enum and relevant operators.
+ *
+ */
 
 #ifndef LAB0_SUIT_H
 #define LAB0_SUIT_H

@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * includes.h
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This header file contains include statements and constants used in most files.
+ *
+ */
 
 #ifndef LAB0_INCLUDES_H
 #define LAB0_INCLUDES_H

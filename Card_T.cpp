@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * Card_T.cpp
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This source file contains the definitions for the Card struct and a << operator for it.
+ *
+ */
 
 #include "Card_T.h"
 

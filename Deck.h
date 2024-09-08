@@ -1,6 +1,11 @@
 /*
- * Created by Nick Cochran on 9/7/24.
- * Part 9.
+ * Deck.h
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This header file contains the abstract Deck class to be implemented elsewhere.
+ *
  */
 
 #ifndef LAB0_DECK_H
@@ -9,8 +14,9 @@
 #include "includes.h"
 
 class Deck {
- public:
-    virtual void print(ostream& ost);
+    virtual void print(ostream& ost) {
+        ost << "";
+    }
 };
 
 #endif //LAB0_DECK_H

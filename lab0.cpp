@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * lab0.cpp
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This source file contains the main function to run the code.
+ *
+ */
 
 #include "Card_T.h"
 #include "PinochleDeck.h"

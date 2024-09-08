@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * HoldEmDeck.cpp
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This source file contains the definitions for the HoldEmDeck class and related operators for the rank enum.
+ *
+ */
 
 #include "HoldEmDeck.h"
 
@@ -8,7 +14,7 @@
 // pushes back cards into the cards vector for the HoldEmDeck class
 HoldEmDeck::HoldEmDeck() {
     for(Suit suit = Suit::clubs; suit != Suit::undefined; ++suit) {
-        for(HoldEmRank rank = HoldEmRank::nine; rank != HoldEmRank::undefined; ++rank) {
+        for(HoldEmRank rank = HoldEmRank::two; rank != HoldEmRank::undefined; ++rank) {
             cards.push_back(Card(suit, rank));
         }
     }
@@ -16,6 +22,7 @@ HoldEmDeck::HoldEmDeck() {
 
 // prints out all of the cards with a line break after the end of each suit
 void HoldEmDeck::print(std::ostream &ost) {
+    ost << "Printing Texas Hold 'Em Deck:" << '\n';
     Suit currSuit = firstSuit;
     for(Card card : cards) {
         if(card.suit != currSuit) {
@@ -24,6 +31,7 @@ void HoldEmDeck::print(std::ostream &ost) {
         }
         ost << card << " ";
     }
+    ost << "\n\n";
 }
 
 

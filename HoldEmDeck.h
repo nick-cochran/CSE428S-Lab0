@@ -1,6 +1,13 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * HoldEmDeck.h
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This header file contains declarations for the HoldEmDeck class which inherits the Deck class.  This
+ *   contains important operators and in the class: a cards vector, a constructor, and a print function.
+ *
+ */
 
 #ifndef LAB0_HOLDEMDECK_H
 #define LAB0_HOLDEMDECK_H
@@ -19,7 +26,7 @@ class HoldEmDeck : public Deck {
     vector< Card<Suit, HoldEmRank> > cards;
  public:
     HoldEmDeck();
-    void print(ostream& ost);
+    void print(ostream& ost) override;
 };
 
 ostream& operator<<(ostream& ost, const HoldEmRank& heRank);

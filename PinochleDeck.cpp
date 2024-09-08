@@ -1,6 +1,12 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
+/*
+ * PinochleDeck.cpp
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This source file contains the definitions for the PinochleDeck class and also operators for the rank enum.
+ *
+ */
 
 #include "PinochleDeck.h"
 
@@ -23,6 +29,7 @@ PinochleDeck::PinochleDeck() {
 
 // prints all of the cards in the deck
 void PinochleDeck::print(std::ostream &ost) {
+    ost << "Printing Pinochle Deck:" << '\n';
     Suit currSuit = firstSuit;
     for(Card card : cards) {
         if(card.suit != currSuit) {
@@ -34,6 +41,7 @@ void PinochleDeck::print(std::ostream &ost) {
         }
         ost << card << " ";
     }
+    ost << "\n\n";
 }
 
 // overloads the << operator for the PinochleRank enum

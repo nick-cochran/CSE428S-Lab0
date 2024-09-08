@@ -1,8 +1,11 @@
-//
-// Created by Nick Cochran on 9/7/24.
-//
 /*
- * part 8.
+ * Card_T.h
+ *
+ * Nick Cochran
+ * email: c.nick@wustl.edu
+ *
+ * This header file contains declarations for the Card struct and a << operator for it.
+ *
  */
 
 #ifndef LAB0_CARD_T_H
@@ -11,10 +14,6 @@
 #include "includes.h"
 
 #include "Suit.h"
-
-//enum class Rank {
-// one, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
-//};
 
 template<typename S, typename R> struct Card;
 
